@@ -1,7 +1,11 @@
 var century, year, month, dayOfMonth, dayOfWeek, day;
 
+//defining the arays
+let dayOfWeek = ["sunday","monday","tuesday","wednesday","thursday","friday", "saturday"];
+let maleNames= ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi", "Kwame"];
 
 function getUserInput(){
+  gender = parseInt(document.getElementById("gender").value);
   century = parseInt(document.getElementById("century").value);
   year = parseInt(document.getElementById("year").value);
   month = parseInt(document.getElementById("month").value);
@@ -15,20 +19,16 @@ function calculateDay(){
   console.log(dayOfWeek);
    //Testing output
    return(Math.floor(dayOfWeek));
-<<<<<<< HEAD
 }
 function checkDayOfWeek(){
   day = calculateDay();
   chechGender();
   console.log("The function is running");
 }
-//defining the arays
-let dayOfWeek = ["sunday","monday","tuesday","wednesday","thursday","friday", "saturday"];
-let dayOfWeek = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi", "Kwame"];
 
 //use slected radio button
 function checkGender(){
-  var xgender = document.getElementsByName("rads");
+  var xgender = document.getElementsByName("xgender");
   if(xgender[0].checked == true) {
     var gender = "male";
   }else if (xgender[1].checked == true) {
@@ -117,3 +117,4 @@ function checkGender(){
           break;
    }
   }
+
