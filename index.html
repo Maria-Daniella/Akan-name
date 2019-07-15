@@ -6,11 +6,10 @@
     <link href="CSS/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <script src="..\javascript\script.js"></script>
+    <script src="javascript\script.js"></script>
     <h1>AKAN NAMES GENERATOR</h1>
     <div class = "container">
       <div class = "jumbotron">
-      <script src="script.js"></script>
       <h1><center>Find out you akan name here!</center></h1>
       </div>
         <div id="form">
@@ -30,7 +29,6 @@
                   <input type="text" name="Year" value="98">
                   <br><br>
                 </div>
-
                 <div class = "Month">
                   Month:<br>
                   <br>
@@ -40,20 +38,21 @@
                 <div class = "day-of-month">
                   Day of the month:<br>
                   <br>
-                  <input type="number" class="form-control id="dayofmonth" value="15">
+                  <input type="number" name="DayOfMonth" value="15">
                   <br><br>
                 </div>
-                  <form>
+                  <form name=gender>
                     <input type="radio" name="gender" value="male" checked> Male<br>
                     <input type="radio" name="gender" value="female"> Female<br>
                     <br>
+                    <button type="button" onclick="checkDayOfWeek();">SUBMIT</button>
                     <br>
-                    <input type="submit" value="Calculate">
                   </form>
               </div>
             </div>
           </form>
       </div>
+    </div>
     </div>
   </body>
 </html>
