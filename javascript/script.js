@@ -20,6 +20,17 @@ function calculateDay(){
       checkGender();
       console.log("The function runs");
 }
+  function verify(){
+    if(dayOfBirth<1||dayOfBirth>31||dayOfBirth===""){
+      alert("invalid day of birth!");
+  }else if(month<1||month>12||month===""){
+      alert("invalid month!");
+  }else if(year<0||year>99||year===""){
+      alert("invalid year!");
+  }else{
+    return false;
+  }
+  }
 
 //arrays
 let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
@@ -61,7 +72,8 @@ function checkGender(){
                   document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan name is " + maleNames[6];
                 break;
                 default:
-                // console.console.log("Pass");
+                // console.
+                console.log("Pass");
               }
         break;
         case gender = "female":
