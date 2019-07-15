@@ -1,22 +1,17 @@
 h1 {
-<<<<<<< HEAD
    color:grey;
 }
 #form {
   background-image:url(ghana1.jpg);
-=======
+
    color:gold;
 }
 #form {
   background-image:url(ghana3.jpg);
->>>>>>> master
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-<<<<<<< HEAD
-=======
 body{
   color:gold;
 }
->>>>>>> master
