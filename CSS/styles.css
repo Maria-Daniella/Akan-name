@@ -1,16 +1,14 @@
 h1 {
-   color:grey;
+   color:white;
 }
 #form {
-  background-image:url(ghana1.jpg);
+
    color:gold;
 }
-#form {
-  background-image:url(ghana3.jpg);
-  background-repeat: no-repeat;
-  background-position: center
-  background-size: cover;
-}
+
 body{
   color:gold;
+  background-image:url(ghana3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

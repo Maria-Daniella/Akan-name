@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>AKHAN NAMES GENERATOR</title>
@@ -12,54 +12,35 @@
     <h1><center>AKAN NAMES GENERATOR</center></h1>
     </div>
     <div class = "container">
-
       <h1><center>Find out you akan name here!</center></h1>
       </div>
-        <div id="form">
-                <div class = "form-group">
-                  <label for="century">Century</label>
-                  <br>
-                  <br>
-                  <input type="text" class="form-control" placeholder="Enter Century" id="century">
-                </div>
-                  <br>
-                  <br>
-                <div class = "form-group">
-                  <label for="year">Year</label>
-                  <br>
-                  <br>
-                  <input type="text" class="form-control" placeholder="Enter year" id="year">
-                  <br><br>
-                </div>
-                <div class = "form-group">
-                  <label for="year">Month</label>
-                  Month:<br>
-                  <br>
-                  <input type="text" class="form-control" placeholder="Enter month" id="month">
-                  <br><br>
-                </div>
-                <div class = "form-group">
-                  <label for="year">Day-of-Month</label><br>
-                  <br>
-                  <input type="number" class="form-control" placeholder="Enter day of the month" id="dayOfMonth">
-                  <br><br>
-                </div>
-                  <form class="radio-button">
-                    <input type="radio" class="gender" value="male" checked> Male<br>
-                    <input type="radio" class="gender" value="female"> Female<br>
-                    <br>
-                  </form>
-                    <a href="#result"><button type="button" name="button" class="btn btn-dark" onclick="checkDayOfWeek(); validate();">CALCULATE</button></a>
-                    <p id="result">0</h1>
-                    <br>
-<<<<<<< HEAD
-              </div>
-=======
-                  </form>
->>>>>>> master
-            </div>
+      <div class="panel col-sm-6 offset-sm-3 text-center">
+          <div class="form-group">
+            <label for="century">Century</label>
+            <input type="text" class="form-control" placeholder="Enter the century" id="century">
+          </div>
+          <div class="form-group">
+            <label for="year">Year</label>
+            <input type="text" placeholder="Enter the year" class="form-control" id="year">
+          </div>
+          <div class="form-group">
+            <label for="month">Month</label>
+            <input type="text" class="form-control" placeholder="Enter the month of the year" id="month">
+          </div>
+          <div class="form-group">
+            <label for="monthDay">Day of month</label>
+            <input type="text" placeholder="Enter the day of the month" class="form-control" id="monthday">
+          </div>
+          <form class="radio-button">
+            <input type="radio" class="genders" value="male" id="rad1" name="rads">Male
+            <input type="radio" class="genders" value="female" id="rad1" name="rads">Female
           </form>
-      </div>
-    </div>
+          <br>
+          <a href="#result"><button type="button" name="button" class="btn btn-dark" onclick="checkDayOfWeek();">Calculate Day</button></a>
+          <h1 id="result">0</h1>
+  </div>
+
+</div>
+<script src="javascript/script.js"></script>
   </body>
 </html>
