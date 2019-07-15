@@ -2,57 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>AKHAN NAMES</title>
+    <title>AKHAN NAMES GENERATOR</title>
+    <link href="CSS/bootstrap.css" rel= "stylesheet" type="text/css">
     <link href="CSS/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <script src="javascript\script.js"></script>
-    <h1>AKAN NAMES GENERATOR</h1>
+    <div class = "jumbotron">
+    <h1><center>AKAN NAMES GENERATOR</center></h1>
+    </div>
     <div class = "container">
-      <div class = "jumbotron">
+
       <h1><center>Find out you akan name here!</center></h1>
       </div>
         <div id="form">
           <form action="/action_page.php">
             <div class = "card">
-              <div class = "card">
-                <div class = "Century">
-                  Century:<br></em>
+                <div class = "century">
+                  Century:<br>
                   <br>
-                  <input type="text" name="Century" value="19">
+                  <input type="text" name="Century" placeholder="Enter Century" id="century">
                 </div>
                   <br>
                   <br>
                 <div class = "year">
                   Year:<br>
                   <br>
-                  <input type="text" name="Year" value="98">
+                  <input type="text" name="Year" placeholder="Enter year" id="year">
                   <br><br>
                 </div>
                 <div class = "Month">
                   Month:<br>
                   <br>
-                  <input type="text" name="Year" value="may">
+                  <input type="text" name="Year" placeholder="Enter month" id="month">
                   <br><br>
                 </div>
                 <div class = "day-of-month">
                   Day of the month:<br>
                   <br>
-                  <input type="number" name="DayOfMonth" value="15">
+                  <input type="number" name="dayOfMonth" placeholder="Enter day of the month" id="dayOfMonth">
                   <br><br>
                 </div>
                   <form name=gender>
                     <input type="radio" name="gender" value="male" checked> Male<br>
                     <input type="radio" name="gender" value="female"> Female<br>
                     <br>
-                    <button type="button" onclick="checkDayOfWeek();">SUBMIT</button>
+                    <a href="#result"><button type="button" name="button" class="btn btn-dark" onclick="checkDayOfWeek(); validate();">SUBMIT</button></a>
+                    <p id="result">0</h1>
                     <br>
                   </form>
               </div>
             </div>
           </form>
       </div>
-    </div>
     </div>
   </body>
 </html>
