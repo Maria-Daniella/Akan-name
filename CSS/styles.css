@@ -1,11 +1,13 @@
 h1 {
-   color:white;
+   color:grey;
 }
 #form {
 
    color:gold;
 }
-
+.color{
+  color:black;
+}
 body{
   color:gold;
   background-image:url(ghana3.jpg);
